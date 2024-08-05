@@ -1,0 +1,14 @@
+<h1 class="p-2">Stupid Coaching</h1>
+
+<div class="question p-2 mb-3 ms-2 border-start border-5 bg-light bg-gradient">
+  <%= params[:question]%>
+  <p><em>-You</em></p>
+</div>
+
+
+<div class="answer p-2 mb-3 ms-2 border-start border-5 alert-warning">
+  <%=@answer_coach %>
+  <p><em>-Your coach</em></p>
+</div>
+
+<%= link_to "Ask another question...", ask_path, :class => "p-2" %>
